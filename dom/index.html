@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="paragrap1"></p>
+    <p id="paragrap2"></p>
+
+    <h1>Heading 1</h1>
+    <h2 id="heading2">Heading 2</h2>
+    <h1>Heading 3</h1> 
+
+    <input type="checkbox" name="animal" value="Cats">
+    <input type="checkbox" name="animal" value="Dog">
+
+    <ul id="menu">
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+    </ul>
+
+    <script>
+        const paragrap1 = document.getElementById('paragrap1')
+        document.getElementById('paragrap1').innerText = 'Lorem ipsum'
+        document.getElementById('paragrap1').style.color = 'white'
+        document.getElementById('paragrap1').style.backgroundColor = 'red'
+        document.getElementById('paragrap1').style.width = '100px'
+        document.getElementById('paragrap2').innerHTML = 'Testing'
+
+        console.log(document.getElementsByName('animal').length)
+        console.log(document.getElementById('paragrap2').innerHTML)
+
+        // console.log(document.getElementsByTagName("h1")[2].innerHTML = 'Hello World')
+
+        let menu = document.getElementById('menu')
+        let items = menu.getElementsByClassName('item')
+        let dataList = [].map.call(items, item => item.innerHTML);
+        console.log(dataList)
+
+        document.querySelector('h2').style.color = 'red'
+
+        let firstChild = menu.firstChild
+        console.log(firstChild)
+        console.log(menu.firstElementChild.innerHTML)
+        console.log(menu.lastElementChild.innerHTML)
+        console.log(menu.children[0].innerHTML)
+    </script>
+</body>
+</html>
