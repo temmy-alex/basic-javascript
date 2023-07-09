@@ -1,4 +1,3 @@
-// Penulisan variable menggunakan var
 var rakamin = 'Rakamin Academy'
 // Camel Case
 // var GreetingFirst = 'Hello World'
@@ -7,6 +6,7 @@ var rakamin = 'Rakamin Academy'
 
 var greetingFirst = 'Hello World'
 var age = 10
+var address = 'Street'
 
 console.log(greetingFirst)
 console.log(rakamin)
